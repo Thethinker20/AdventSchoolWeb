@@ -62,6 +62,48 @@
      -o-transition: all 0.5s ease;
      transition:all 0.5s ease;
 }
+
+.counts {
+    background: #f36b3b;
+    padding: 70px 0 60px;
+  }
+  
+  .counts .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .counts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: #262688;
+    padding: 12px;
+    color: #fff;
+    border-radius: 50px;
+  }
+  
+  .counts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #082744;
+    padding-bottom: 10px;
+  }
+  
+  .counts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+  }
+  
+
  h1, h2 {
      font-weight:700;
      line-height:28px;
@@ -1331,7 +1373,7 @@
      border-bottom-right-radius: 0px;
 }
  .in-ev-latest-bg-1{
-     background: url(../images/ev-in-bg1.jpg) no-repeat;
+     background: url(../media/ev-in-bg1.jpg) no-repeat;
      background-size: cover;
 }
  .ho-lat-ev{
@@ -1340,7 +1382,7 @@
  .ho-lat-ev a{
      color: #fff;
 }
- .ho-lat-ev h4{
+ .ho-lat-ev h3{
      color:#fff;
      font-size: 22px;
      padding-bottom: 14px;
@@ -1350,8 +1392,7 @@
      margin-bottom: 0px;
      font-size: 14px;
 }
- .ho-lat-ev span{
-}
+
  .ho-st-login{
      position: relative;
      overflow: hidden;
@@ -2256,7 +2297,7 @@
      padding: 15px 0px 25px 0px;
 }
  .cor-tim-tab ul li{
-     background: url('../images/book.png') no-repeat left center;
+     background: url('../media/book.png') no-repeat left center;
      padding-left:50px;
      margin-bottom:20px;
      font-size:13px;
@@ -2277,7 +2318,14 @@
 /* =  14.USER DASHBOARD 
 /*-------------------------------------------------*/
  .pro-cover{
-     background: url('../images/pro-bg.jpg') no-repeat center center;
+     background: url('../media/pro-bg.jpg') no-repeat center center;
+     width:100%;
+     height:250px;
+     display: block;
+     background-size: cover;
+}
+ .pro-coverTeacher{
+     background: url('../media/teacherGeneral1.jpg') no-repeat center center;
      width:100%;
      height:250px;
      display: block;
@@ -2316,7 +2364,6 @@
 }
  .pro-user{
      position:relative;
-     margin-top:-160px;
      box-shadow: 0px 5px 18px -11px rgba(150,150,150,0.8);
      border: 1px solid #f3f2f2;
      border-bottom: 0px;
@@ -2794,7 +2841,7 @@
      position: relative;
     /* overflow: hidden;
      */
-     background: #f7f8f9;
+     background: #ffffff;
 }
  .udb{
      padding: 50px 25px;
@@ -2823,9 +2870,19 @@
      vertical-align: bottom;
      width:24px;
 }
+
+.udb-img{
+    padding-bottom: 30px;
+}
+
+.udb-img img{
+    height: 120px;
+}
  .udb-sec p{
 }
  .udb-cour{
+     padding-top: 50px;
+     padding-bottom: 50px;
 }
  .sdb-cours{
      position: relative;
@@ -2835,7 +2892,7 @@
  .sdb-cours ul{
 }
  .sdb-cours ul li{
-     width: 50%;
+     width: 33%;
      float: left;
      padding-right: 15px;
      margin-bottom: 15px;
@@ -3101,7 +3158,7 @@
      position: absolute;
      width: 100%;
      right: 0px;
-     left: 0px;
+     left: 450px;
 }
  .about-mm, .admi-mm, .cour-mm{
      display:none;
@@ -3109,7 +3166,7 @@
  .m-menu{
      position: absolute;
      overflow: hidden;
-     width: 100%;
+     width: 60%;
      box-shadow: 0px 7px 12px -4px rgba(0, 0, 0, 0.45);
      background: url('../images/mm-col-bg.png') no-repeat right bottom, #fff;
      z-index: 999;
@@ -3119,7 +3176,7 @@
  .m-menu-inn{
 }
  .mm1-com{
-     width: 25%;
+     width: 50%;
      float: left;
      box-sizing: border-box;
      padding: 20px;
@@ -3998,6 +4055,8 @@ left: 0;
 /* = 29.CONTACT US 
 /*-------------------------------------------------*/
  .pg-contact{
+     display: flex;
+     justify-content: center;
 }
  .new-con {
      text-align: center;
@@ -5743,15 +5802,12 @@ padding: 6px 25px;
     margin-top: 50px;
     border-radius: 4px;
 }
-.ad-log-in-logo{}
-.ad-log-in-logo a{}
-.ad-log-in-logo a img{}
+
 .ad-log-in-con{
     position: relative;
     overflow: hidden;
 }
-.log-in-pop-right{
-}
+
 .ad-log-in-con h4{
     margin-bottom: 15px;
     margin-top: 15px;
@@ -5759,6 +5815,4 @@ padding: 6px 25px;
     font-weight: 700;
     color: #e66030;	
 }
-.ad-log-in-con p{}
-.ad-log-in-con form{}
-.ad-log-in-con form input{}
+
