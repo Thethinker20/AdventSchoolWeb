@@ -5,6 +5,8 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const http = require("http");
 const https = require("https");
+const bodyParser = require("body-parser");
+const nodemailer = require("nodemailer");
   
 const app = express();
 
@@ -42,6 +44,44 @@ app.use(morgan("tiny")); //Morgan
 app.use(cors()); // cors
 app.use(express.json()); // JSON
 app.use(express.urlencoded({ extended: false })); //urlencoded
+
+
+//send Email
+app.post("/preguntaEmail", (req, res) => {
+  const { nombre, tel, email, message } = req.body;
+
+  let transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: "adventschoolbestuur@gmail.com",
+      pass: "Advent2020",
+    },
+  });
+
+  let mailOption = {
+    from: email,
+    to: `adventschoolbestuur@gmail.com`,
+    subject: "Pregunta mayornan",
+    html:
+      "<h2>Pregunta</h2><h5>di: " +
+      nombre +
+      "</h5><h5>Email: " +
+      email +
+      "</h5><h5>Telefon: " +
+      tel +
+      "</h5><h5>Mensage: "+
+      message ,
+  };
+
+  transporter.sendMail(mailOption, function (err, data) {
+    if (err) {
+      data.json({ status: "404", data: err });
+    } else {
+      console.log("Email sent");
+      data.json({ status: "202", data: "E pregunta a wordu manda" });
+    }
+  });
+});
 
 // Routes
 app.use(require("./routes"));

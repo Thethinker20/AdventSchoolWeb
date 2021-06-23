@@ -6,27 +6,31 @@ router.get("/", (req, res) => {
 });
 
 router.get("/historia", (req, res) => {
-  res.render("pages/historia");
+  res.render("pages/website/historia");
 });
 
 router.get("/kontakt", (req, res) => {
-  res.render("pages/kontakt");
+  res.render("pages/website/kontakt");
 });
 
 router.get("/kalender", (req, res) => {
-  res.render("pages/kalender");
+  res.render("pages/website/kalender");
 });
 
 router.get("/akademia", (req, res) => {
-  res.render("pages/akademia");
+  res.render("pages/website/akademia");
 });
 
 router.get("/maestro", (req, res) => {
-  res.render("pages/maestro");
+  res.render("pages/website/maestro");
 });
 
 router.get("/teamKuido", (req, res) => {
-  res.render("pages/teamKuido");
+  res.render("pages/website/teamKuido");
+});
+
+router.get("/amigunanSkol", (req, res) => {
+  res.render("pages/website/amigunanSkol");
 });
 
 
