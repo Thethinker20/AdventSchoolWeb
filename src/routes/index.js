@@ -4,6 +4,15 @@ const router = express.Router();
 router.get("/", (req, res) => {
   res.render("home");
 });
+router.get("/login", (req, res) => {
+  res.render("auth/login", { layout: false });
+});
+router.get("/register", (req, res) => {
+  res.render("auth/register", { layout: false });
+});
+router.get("/logMaestro", (req, res) => {
+  res.render("auth/logMaestro", { layout: false });
+});
 
 router.get("/historia", (req, res) => {
   res.render("pages/website/historia");
