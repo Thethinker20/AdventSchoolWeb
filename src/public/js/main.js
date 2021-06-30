@@ -53,8 +53,7 @@ function download(file, text) {
 }
 
 // Start file download.
-document.getElementById("btnDownload")
-.addEventListener("click", function() {
+document.getElementById("btnDownload").addEventListener("click", function() {
   // Generate download of hello.txt 
   // file with some content
   //var text = document.getElementById("text").value;
@@ -62,3 +61,4 @@ document.getElementById("btnDownload")
 
   download(filename);
 }, false);
+

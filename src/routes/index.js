@@ -41,6 +41,12 @@ router.get("/teamKuido", (req, res) => {
 router.get("/amigunanSkol", (req, res) => {
   res.render("pages/website/amigunanSkol");
 });
+router.get("/bonam", (req, res) => {
+  res.render("pages/skolnan/bonam");
+});
+router.get("/bonamHist", (req, res) => {
+  res.render("pages/skolnan/bonamHistoria");
+});
 
 
 module.exports = router;
