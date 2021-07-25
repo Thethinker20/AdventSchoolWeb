@@ -56,7 +56,7 @@
      -o-transition: all 0.5s ease;
      transition:all 0.5s ease;
      outline:none;
-}
+}   
  a:hover{
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
@@ -65,7 +65,7 @@
 }
 
 .counts {
-    background: #aa3b61;
+    background: #851313;
     padding: 70px 0 60px;
   }
   
@@ -144,7 +144,7 @@
  .con-title h2 span{
      font-size: 36px;
      font-weight:700;
-     color: #aa3b61;
+     color: #851313;
      line-height: 40px;
 }
  .con-title p{
@@ -684,7 +684,7 @@
 
 .regButton:hover{
     color: rgb(201, 201, 201);
-    background: #aa3b61;
+    background: #851313;
 }
 
 .regLogo{
@@ -970,7 +970,7 @@
      font-size: 12px;
 }
  .ed-com-t1-right ul li:nth-child(1) a{
-     background: #aa3b61;
+     background: #851313;
 }
  .ed-com-t1-right ul li:nth-child(2) a{
      background: #013673;
@@ -1000,7 +1000,7 @@
      position:relative;
 }
  .main-menu ul li a:hover{
-     color: #aa3b61;
+     color: #851313;
 }
  .main-menu ul li a:after{
      content: "";
@@ -1009,8 +1009,8 @@
      height: 3px;
      bottom: 12px;
      left: 0;
-     color: #aa3b61;
-     background-color: #aa3b61;
+     color: #851313;
+     background-color: #851313;
      visibility: hidden;
      -webkit-transform: scaleX(0);
      transform: scaleX(0);
@@ -1453,9 +1453,9 @@
 }
  .light-btn{
      color: #fff;
-     background: #aa3b61;
-     background: -webkit-linear-gradient(to top, #ef612f, #aa3b61);
-     background: linear-gradient(to top, #ef612f, #aa3b61);
+     background: #851313;
+     background: -webkit-linear-gradient(to top, #ef612f, #851313);
+     background: linear-gradient(to top, #ef612f, #851313);
      padding: 0px 10px;
      line-height: 40px;
      border-radius: 3px;
@@ -1660,8 +1660,8 @@
      border-top-right-radius: 2px;
      border-bottom-right-radius: 2px;
      background: #e05a2b;
-     background: -webkit-linear-gradient(to top, #ef612f, #aa3b61);
-     background: linear-gradient(to top, #de592a, #aa3b61);
+     background: -webkit-linear-gradient(to top, #ef612f, #851313);
+     background: linear-gradient(to top, #de592a, #851313);
 }
 
 /*-------------------------------------------------*/
@@ -1690,7 +1690,9 @@
      text-transform: uppercase;
      font-weight: 700;
      line-height: 28px;
-     color: #aa3b61;
+     color: #a51a1a;
+
+     
 }
  .slider-con p{
      font-size: 20px;
@@ -1714,11 +1716,11 @@
      margin:0px 10px;
 }
  .bann-btn-1{
-     background: #aa3b61;
-     background: -webkit-linear-gradient(to top, #ef612f, #aa3b61);
-     background: linear-gradient(to top, #ef612f, #aa3b61);
+     background: #851313;
+     background: -webkit-linear-gradient(to top, #ef612f, #851313);
+     background: linear-gradient(to top, #ef612f, #851313);
      color: #fff;
-     border: 1px solid #aa3b61;
+     border: 1px solid #851313;
 }
  .bann-btn-1:hover{
      border: 1px solid #fff;
@@ -1927,7 +1929,7 @@
 /* =  11.BOTTOM BOOKING 
 /*-------------------------------------------------*/
  .full-bot-book{
-     background: #aa3b61;
+     background: #851313;
      padding: 40px 250px;
      position: relative;
      overflow: hidden;
@@ -2340,11 +2342,11 @@ header {
      font-size: 14px;
      height: 45px;
      text-align: center;
-     background: #aa3b61;
-     background: -webkit-linear-gradient(to top, #ef612f, #aa3b61);
-     background: linear-gradient(to top, #ef612f, #aa3b61);
+     background: #851313;
+     background: -webkit-linear-gradient(to top, #ef612f, #851313);
+     background: linear-gradient(to top, #ef612f, #851313);
      color: #fff;
-     border: 1px solid #aa3b61;
+     border: 1px solid #851313;
      width: 100%;
 }
  .cor-p7-revi label{
@@ -2481,6 +2483,7 @@ header {
      border: 1px solid #f3f2f2;
 }
  .pro-user-bio ul{
+     text-align: center;
 }
  .pro-user-bio ul li{
      padding-bottom: 10px;
@@ -3079,7 +3082,7 @@ header {
      padding-bottom: 20px;
 }
  .udb-time-line ul li:hover .fa-clock-o{
-     background: #aa3b61;
+     background: #851313;
      -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
      -o-transition: all 0.5s ease;
@@ -3724,7 +3727,7 @@ left: 0;
      display: inline-block;
 }
  .aw-re-btn:hover{
-     background:#aa3b61;
+     background:#851313;
      color:#fff;
 }
 /*-------------------------------------------------*/
@@ -3914,7 +3917,7 @@ left: 0;
      background: #fff;
      border-radius: 2px;
      margin-bottom: 4px;
-     padding: 0px 15px;
+     padding: 5px 5px;
      box-sizing: border-box;
      font-size: 14px;
      color: #000;
@@ -4058,7 +4061,7 @@ left: 0;
      text-align: center;
     /* margin: 0px 10px;
      */
-    /* background: linear-gradient(to top, #ef612f, #aa3b61);
+    /* background: linear-gradient(to top, #ef612f, #851313);
      */
      color: #02294e;
      border: 1px solid #02294e;
@@ -4067,7 +4070,7 @@ left: 0;
  .pg-eve-reg a:hover{
      color: #ffffff;
      border: 1px solid #d45023;
-     background: #aa3b61;
+     background: #851313;
 }
  .pg-eve-reg:nth-child(1) a{
 }
@@ -4110,7 +4113,7 @@ left: 0;
  .pg-eve-main ul li:hover .pg-eve-reg a:nth-child(1){
      color: #ffffff;
      border: 1px solid #d45023;
-     background: #aa3b61;
+     background: #851313;
 }
  .head-2{
      padding: 55px 0px 40px 0px;
@@ -4167,7 +4170,7 @@ left: 0;
      text-align: center;
 }
  .new-con h2 {
-     color: #aa3b61;
+     color: #851313;
      text-transform: uppercase;
      margin-top: 8px;
      font-size: 24px;
@@ -4225,7 +4228,7 @@ left: 0;
      border: 5px #1f4363;
      border-style: dashed;
      overflow: hidden;
-     padding-bottom: 15px;
+     padding: 20px;
 }
  .map-head {
      text-align: center;
@@ -4267,7 +4270,7 @@ left: 0;
      margin-bottom: 0px;
      font-size: 48px;
      padding: 8px 0px;
-     color: #aa3b61;
+     color: #851313;
      line-height: 42px;
 }
  .footer-part-form {
@@ -4297,12 +4300,32 @@ left: 0;
      height: 90px;
 }
  .footer-part-form ul li input[type="submit"] {
-     background: #aa3b61;
+     background: #851313;
      border: 0px solid #c4c4c4;
      color: #fff;
      width: 100%;
      letter-spacing: 1px;
      font-weight: 700;
+}
+
+.contact-button{
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-button button{
+    background: #002147;
+    color: #ffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 70px;
+    font-size:14px;
+}
+
+.contact-button button:hover{
+    background: #851313;
+    transform: scale(1.1);
 }
 /*-------------------------------------------------*/
 /* = 30.MOBILE MANU 
@@ -4494,7 +4517,7 @@ left: 0;
     position: relative;
     overflow: hidden;
     padding: 15px;
-    background: #aa3b61;
+    background: #851313;
 }
 .sb2-12 ul {
     padding: 0px;
@@ -5505,7 +5528,7 @@ width: 100%;
 .ed-ban-cal-le{
     width: 75px;
     height: 70px;
-    background: #aa3b61;
+    background: #851313;
     border-radius: 2px;
     text-align: center;
     float: left;
@@ -5634,7 +5657,7 @@ input:not(:focus):valid ~ .floating-label{
   color: #8c8c8c;
 }
 .ed-ref-form-inn form ul li input[type="submit"]{
-    background: #aa3b61;
+    background: #851313;
     color: #fff;
     height: 50px;
     line-height: 50px;
@@ -5851,7 +5874,7 @@ padding: 6px 25px;
     height: 35px;
     text-align: center;
     /* margin: 0px 10px; */
-    /* background: linear-gradient(to top, #ef612f, #aa3b61); */
+    /* background: linear-gradient(to top, #ef612f, #851313); */
     color: #02294e !important;
     border: 1px solid #02294e;
     margin-top: 10px;
@@ -5918,6 +5941,6 @@ padding: 6px 25px;
     margin-top: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #aa3b61;	
+    color: #851313;	
 }
 

@@ -10,8 +10,8 @@ router.get("/login", (req, res) => {
 router.get("/register", (req, res) => {
   res.render("auth/register", { layout: false });
 });
-router.get("/logMaestro", (req, res) => {
-  res.render("auth/logMaestro", { layout: false });
+router.get("/loginMaestro", (req, res) => {
+  res.render("auth/loginMaestro", { layout: false });
 });
 
 router.get("/historia", (req, res) => {
@@ -46,6 +46,9 @@ router.get("/bonam", (req, res) => {
 });
 router.get("/bonamHist", (req, res) => {
   res.render("pages/skolnan/bonamHistoria");
+});
+router.get("/koralspecht", (req, res) => {
+  res.render("pages/skolnan/koralspecht");
 });
 
 

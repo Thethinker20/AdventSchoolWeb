@@ -104,7 +104,74 @@ header .overlay {
   text-align: right;
   font-size: 20px;
 }
-/* mishon i vishon section */
+/* mas info */
+.mas-info{
+  width: 100%;
+  height: 100vh;
+}
+
+.mas-title{
+  position: absolute;
+  width: 30%;
+  height: 200px;
+  left: 540px;
+  margin-top: 50px;
+}
+
+.mas-title h2{
+  font-size: 36px;
+  margin-bottom: 15px;
+  line-height: 40px;
+}
+
+.mas-title h2 span{
+  font-size: 36px;
+    font-weight: 700;
+    color: #851313;
+    line-height: 40px;
+}
+
+.mas-box{
+  position: absolute;
+  width: 87%;
+  height: 500px;
+  margin-top: 100px;
+  left: 130px;
+}
+
+.mas-box-content{
+  position: relative;
+  width: 22%;
+  top: 90px;
+  cursor: pointer;
+}
+.mas-box-content1{
+  position: relative;
+  width: 22%;
+  top: 20px;
+  left: 190px;
+  z-index: 1;
+}
+.mas-box-content2{
+  position: relative;
+  width: 22%;
+  top: -40px;
+  left: 388px;
+}
+
+.mas-img{
+  position: relative;
+  width: 0;
+  top: -58px;
+  height: 0;
+  left: 860px;
+}
+
+.mas-img img{
+  height: 800px;
+}
+
+/* mas info section1 */
 .reglaS {
   width: 100%;
   height: 70vh;
@@ -136,7 +203,7 @@ header .overlay {
 .reglaS h2 span{
   font-size: 36px;
     font-weight: 700;
-    color: #aa3b61;
+    color: #851313;
     line-height: 40px;
 }
 
@@ -199,7 +266,7 @@ header .overlay {
   .modalR
   .modal-contentR
   .modal-headerR {
-  background: #aa3b61;
+  background: #851313;
   padding: 0px;
   color: #fff;
   left: 50px;
@@ -327,7 +394,7 @@ header .overlay {
     border-bottom-left-radius: 10px;
     animation-name: example;
     animation-duration: 0.25s;
-    border-left: 8px solid #aa3b61;
+    border-left: 8px solid #851313;
     box-shadow: 0 14px 28px rgba(255, 255, 255, 0.10), 0 10px 10px rgba(0,0,0,0.22);
 
 }
@@ -348,7 +415,7 @@ header .overlay {
         border-bottom-left-radius: 10px;
         animation-name: example;
         animation-duration: 0.25s;
-        border-left: 8px solid #aa3b61;
+        border-left: 8px solid #851313;
         box-shadow: 0 14px 28px rgba(255, 255, 255, 0.10), 0 10px 10px rgba(0,0,0,0.22);
     
 }
@@ -392,7 +459,8 @@ header .overlay {
 }
 
 .ptB{
-  padding-top:70px ;
+  padding-top:70px;
+  padding-bottom: 50px;
 }
 
 .ptB h2{
@@ -405,7 +473,7 @@ header .overlay {
 .ptB h2 span{
   font-size: 36px;
     font-weight: 700;
-    color: #aa3b61;
+    color: #851313;
     line-height: 40px;
 }
 
@@ -415,8 +483,143 @@ header .overlay {
   z-index: 9;
 }
 .pro-userB img{
-  width:100%;
+  width:80%;
 }
+
+.pt-1{
+  padding-top: 10px;
+}
+
+.infoBar{
+  height: 30vh;
+  width: 100%;
+}
+
+.info1{
+  background: #af476a;
+  height: 30vh;
+  width: 33.33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.info2{
+  background: #b15573;
+  height: 30vh;
+  width: 33.33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+.info3{
+  background: #b16b83;
+  height: 30vh;
+  width: 33.33%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.tInfoK .tInfoIK {
+  width: 100%;
+  height: 30vh; 
+padding-top: 50px;
+}
+  .tInfoK .tInfoIK .tInfoISectionK {
+    width: 100%;
+    height: 100%; }
+    .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      height: 100%; }
+      .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK {
+        background: #af476a;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK .tInfoI-boxContK {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK .tInfoI-boxContK .tInfoImgK {
+            height: 5em;
+            opacity: 0.5; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK .tInfoI-boxContK .tInfoITextBK {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 5%; }
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK .tInfoI-boxContK .tInfoITextBK .tInfoITextK {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 37px;
+              color: #ffffff;
+              padding: 3%; 
+              text-transform: capitalize;
+            }
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-boxK .tInfoI-boxContK .tInfoITextBK .tInfoIText2K {
+              font-weight: 600;
+              font-size: 20px;
+              color: #ffffff;
+              padding-left: 3%; }
+      .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K {
+        background: rgb(197, 113, 136);
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K .tInfoI-boxContK {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K .tInfoI-boxContK .tInfoImgK {
+            height: 5em;
+            opacity: 0.5; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K .tInfoI-boxContK .tInfoITextBK {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 5%; }
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K .tInfoI-boxContK .tInfoITextBK .tInfoITextK {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 37px;
+              color: #ffffff;
+              padding: 3%; 
+              text-transform: capitalize;}
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box1K .tInfoI-boxContK .tInfoITextBK .tInfoIText2K {
+              font-weight: 600;
+              font-size: 20px;
+              color: #ffffff;
+              padding-left: 3%; }
+      .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K {
+        background: #ac5874;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K .tInfoI-boxContK {
+          width: 60%;
+          display: flex;
+          flex-direction: row; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K .tInfoI-boxContK .tInfoImgK {
+            height: 5em;
+            opacity: 0.5; }
+          .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K .tInfoI-boxContK .tInfoITextBK {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            margin-left: 5%; }
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K .tInfoI-boxContK .tInfoITextBK .tInfoITextK {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 37px;
+              color: #ffffff;
+              padding: 3%; 
+              text-transform: capitalize;}
+            .tInfoK .tInfoIK .tInfoISectionK .tInfoI-contentK .tInfoI-box2K .tInfoI-boxContK .tInfoITextBK .tInfoIText2K {
+              font-weight: 600;
+              font-size: 20px;
+              color: #ffffff;
+              padding-left: 3%; }
 
 
 @keyframes shake {
