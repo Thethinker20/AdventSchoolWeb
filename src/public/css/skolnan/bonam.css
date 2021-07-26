@@ -145,6 +145,7 @@ html {
   top: 90px;
   cursor: pointer;
 }
+
 .mas-box-content1 {
   position: relative;
   width: 22%;
@@ -777,6 +778,10 @@ html {
   }
 }
 
+
+
+
+
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -812,5 +817,22 @@ html {
   }
   100% {
     transform: scaleZ(1.5);
+  }
+}
+
+@keyframes slideRight{
+  0%{
+      opacity: 0;
+      transform: translateX(-100px);
+  }
+  25%{
+      opacity: 1;
+      transform: translateX(10px);
+  }
+  50%{
+      transform: translateX(-10px);
+  }
+  100%{
+      transform: translateX(0px);
   }
 }
