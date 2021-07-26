@@ -50,6 +50,15 @@ router.get("/bonamHist", (req, res) => {
 router.get("/koralspecht", (req, res) => {
   res.render("pages/skolnan/koralspecht");
 });
+router.get("/koralHistoria", (req, res) => {
+  res.render("pages/skolnan/koralHistoria");
+});
+router.get("/mahuma", (req, res) => {
+  res.render("pages/skolnan/mahuma");
+});
+router.get("/mahumaHistoria", (req, res) => {
+  res.render("pages/skolnan/mahumaHistoria");
+});
 
 
 module.exports = router;
