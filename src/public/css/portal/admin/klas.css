@@ -1,0 +1,52 @@
+.klas-content{
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    width: 95%;
+    margin-left: 30px;
+    position: relative;
+    top: -50px;
+  }
+
+  .boxklas:hover{
+      transform: scale(1.1);
+  }
+  .klas-box{
+      background: #64c5b1;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-direction: column;
+      margin-left: 15px;
+      margin-top: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+  }
+  .klas-box1{
+      background: #c03838;
+      padding: 20px 40px;
+      margin-left: 10px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-direction: column;
+      border-radius: 15px;
+      cursor: pointer;
+      color: white;
+  }
+  .klas-box2{
+    background: #851313;
+      padding: 20px 40px;
+      margin-left: 15px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      flex-direction: column;
+      border-radius: 10px;
+      cursor: pointer;
+      color: white;
+  }

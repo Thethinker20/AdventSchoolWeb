@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap");
+
+*{
+    font-family: 'Montserrat';
+}
+
 body{
     animation: fadeIn 1s ease-in;
 }
@@ -14,13 +20,113 @@ a img{
     height: 70px;
 }
 
-.comingSoon{
-    height: 90vh;
+.register-header{
+    height: 150px;
+    padding-top: 20px;
+}
+
+.avatar-upload {
+    position: relative;
+    max-width: 205px;
+    background-image: url("../media/user-example.png");
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-upload .avatar-edit input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+}
+.avatar-upload .avatar-edit input + label:after {
+    content: "\f040";
+    font-family: 'FontAwesome';
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+}
+.avatar-upload .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+}
+.avatar-upload .avatar-preview > div {
     width: 100%;
-    background: url(/media/comingSoon.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;
+    border-radius: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.avatar-text{
+    padding-top: 10px;
+}
+
+.reg-input{
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.stud-text{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mb-25{
+margin-bottom: 25px;
+}
+
+label{
+    font-weight: 500;
+}
+
+.bRow{
+
+}
+
+.reg-sendButton{
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    margin-top: 13px;
+    border: none;
+    background: #851313;
+    color: white;
+    border-radius: 8px;
+    float: right;
 }
 
 @keyframes fadeIn {

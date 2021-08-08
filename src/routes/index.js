@@ -60,5 +60,25 @@ router.get("/mahumaHistoria", (req, res) => {
   res.render("pages/skolnan/mahumaHistoria");
 });
 
+// portal
+router.get("/admin-home", (req, res) => {
+  res.render("pages/portal/admin/admin-home", { layout: false });
+});
+router.get("/admin-maestro", (req, res) => {
+  res.render("pages/portal/admin/admin-maestro", { layout: false });
+});
+router.get("/admin-studiante", (req, res) => {
+  res.render("pages/portal/admin/admin-studiante", { layout: false });
+});
+router.get("/admin-klas", (req, res) => {
+  res.render("pages/portal/admin/admin-klas", { layout: false });
+});
+router.get("/maestro-home", (req, res) => {
+  res.render("pages/portal/teacher/maestro-home", { layout: false });
+});
+
+router.get("/admin-mIndividual", (req, res) => {
+  res.render("pages/portal/admin/admin-mIndividual", { layout: false });
+});
 
 module.exports = router;

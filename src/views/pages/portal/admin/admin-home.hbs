@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='/vendor/bootstrap/css/bootstrap.min.css'>
+    <script src="https://kit.fontawesome.com/14fac1d4b2.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/css/portal/style.css'>
+
+</head>
+
+<body>
+    {{!-- navbar --}}
+   <nav id="navbar">
+    <div class="row rowW">
+        <div class="nav-img">
+            <a href=""><img src="media/logoDash.png" alt=""></a>
+        </div>
+        <div class="nav-drop">
+            <div class="nav-dropdown">
+                <img src="media/admin-logo.png" alt="">
+                <span>Admsin</span>
+                <i class="fas fa-angle-down"></i>
+                <div class="nav-dropdown-content">
+                    <a href="#"><i class="fas fa-user"></i>Profile</a>
+                    <a href="/loginMaestro"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+{{!-- sidebar --}}
+<div class="sidebar">
+    <div class="logo-details">
+        <img src="media/admin-logo.png" class="icon">
+        <div class="logo_name">Admin</div>
+        <i class="fas fa-bars" id="btn"></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="/admin-home">
+          <i class='bx bxs-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="/admin-maestro">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Maestro</span>
+       </a>
+       <span class="tooltip">Maestro</span>
+     </li>
+     <li>
+       <a href="/admin-studiante">
+         <i class='bx bxs-graduation'></i>
+         <span class="links_name">Studiante</span>
+       </a>
+       <span class="tooltip">Studiante</span>
+     </li>
+     <li>
+       <a href="/admin-klas">
+         <i class='bx bxs-school' ></i>
+         <span class="links_name">Klasnan</span>
+       </a>
+       <span class="tooltip">Klasnan</span>
+     </li>
+    </ul>
+  </div>
+ {{!-- content --}}
+   <div class="dash-welcome">
+<div class="dash-header">
+    <h4>Portal</h4>
+    <h6>Bestuur > portal > home</h6>
+</div>
+<div class="dash-box">
+    <div class="wel-content">
+        <div class="row">
+        <div class="cont-box">
+            <div class="box-title">Maestro</div>
+            <div class="box-number">10</div>
+            <a href="" class="box-button">Mas</a>
+        </div>
+        <div class="cont-box1">
+            <div class="box-title">Studiante</div>
+            <div class="box-number">50</div>
+            <a href="" class="box-button">Mas</a>
+        </div>
+         <div class="cont-box2">
+            <div class="box-title">Klas</div>
+            <div class="box-number">13</div>
+            <a href="" class="box-button">Mas</a>
+        </div>
+        </div>
+    </div>
+</div>
+
+</div>
+</body>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="js/portal/general.js"></script>
+
+</html>
