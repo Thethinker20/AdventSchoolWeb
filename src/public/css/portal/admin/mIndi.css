@@ -447,17 +447,3 @@ select {
 }
 
 
-.dataTables_filter{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
-}
-
-.dataTables_info{
-    margin-top: 10px;
-}
-
-.dataTables_paginate{
-    display: flex;
-    justify-content: flex-end;
-}

@@ -2,44 +2,44 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Home</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='/vendor/bootstrap/css/bootstrap.min.css'>
-    <script src="https://kit.fontawesome.com/14fac1d4b2.js" crossorigin="anonymous"></script>
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel='stylesheet' href='/css/portal/style.css'>
-    <link rel='stylesheet' href='/css/portal/maestro/home.css'>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Home</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='/vendor/bootstrap/css/bootstrap.min.css'>
+  <script src="https://kit.fontawesome.com/14fac1d4b2.js" crossorigin="anonymous"></script>
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='/css/portal/style.css'>
+  <link rel='stylesheet' href='/css/portal/maestro/home.css'>
 
 </head>
 
 <body>
-    {{!-- navbar --}}
-   <nav id="navbar">
+  {{!-- navbar --}}
+  <nav id="navbar">
     <div class="row rowW">
-        <div class="nav-img">
-            <a href=""><img src="media/logoDash.png" alt=""></a>
+      <div class="nav-img">
+        <a href=""><img src="media/logoDash.png" alt=""></a>
+      </div>
+      <div class="nav-drop">
+        <div class="nav-dropdown">
+          <img src="media/maricruz1.jpg" alt="">
+          <span>Maricruz</span>
+          <i class="fas fa-angle-down"></i>
+          <div class="nav-dropdown-content">
+            <a href="#"><i class="fas fa-user"></i>Profile</a>
+            <a href="/loginMaestro"><i class="fas fa-sign-out-alt"></i>Logout</a>
+          </div>
         </div>
-        <div class="nav-drop">
-            <div class="nav-dropdown">
-                <img src="media/maricruz1.jpg" alt="">
-                <span>Maricruz</span>
-                <i class="fas fa-angle-down"></i>
-                <div class="nav-dropdown-content">
-                    <a href="#"><i class="fas fa-user"></i>Profile</a>
-                    <a href="/loginMaestro"><i class="fas fa-sign-out-alt"></i>Logout</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</nav>
-{{!-- sidebar --}}
-<div class="sidebar">
+  </nav>
+  {{!-- sidebar --}}
+  <div class="sidebar">
     <div class="logo-details">
-        <img src="media/maricruz1.jpg" class="icon">
-        <div class="logo_name">Maricruz</div>
-        <i class="fas fa-bars" id="btn"></i>
+      <img src="media/maricruz1.jpg" class="icon">
+      <div class="logo_name">Maricruz</div>
+      <i class="fas fa-bars" id="btn"></i>
     </div>
     <ul class="nav-list">
       <li>
@@ -47,43 +47,67 @@
           <i class='bx bxs-home'></i>
           <span class="links_name">Home</span>
         </a>
-         <span class="tooltip">Home</span>
+        <span class="tooltip">Home</span>
       </li>
-     <li>
-       <a href="/maestro-studiante">
-         <i class='bx bxs-graduation'></i>
-         <span class="links_name">Studiante</span>
-       </a>
-       <span class="tooltip">Studiante</span>
-     </li>
-     <li>
-       <a href="/admin-klas">
-         <i class='bx bxs-school' ></i>
-         <span class="links_name">Klasnan</span>
-       </a>
-       <span class="tooltip">Klasnan</span>
-     </li>
+      <li>
+        <a href="/maestro-studiante">
+          <i class='bx bxs-graduation'></i>
+          <span class="links_name">Studiante</span>
+        </a>
+        <span class="tooltip">Studiante</span>
+      </li>
+      <li>
+        <a href="/admin-klas">
+          <i class='bx bxs-school'></i>
+          <span class="links_name">Klasnan</span>
+        </a>
+        <span class="tooltip">Klasnan</span>
+      </li>
     </ul>
   </div>
- {{!-- content --}}
-   <div class="dash-welcome">
-<div class="dash-header">
-    <h4>Portal</h4>
-    <h6>Bestuur > portal > home</h6>
-</div>
-<div class="dash-box">
-    <div class="wel-content">
-        <h2>Bon Bini</h2>
-        <h4>Bon Bini</h4>
+  {{!-- content --}}
+  <div class="dash-welcome">
+    <div class="dash-header">
+      <h4>Portal</h4>
+      <h6>Bestuur > portal > maestro > home</h6>
     </div>
-</div>
-
-</div>
+    <div class="row rowW">
+      <div class="col-lg-4">
+        <div class="dash-box" style="width: 830px;">
+          <div class="wel-content">
+            <div class="row">
+              <div class="maestro-box">
+                <h5>Grupo</h5>
+                <h4>1</h4>
+              </div>
+              <div class="maestro-box">
+                <h5>Muchanan</h5>
+                <h4>13</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dash-box" style="width: 830px; margin-top:20px;">
+            <h5>Notifications:</h5>
+            <hr>
+      </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="dash-box" style="width: 530px; margin-left:400px;">
+          <div class="chart-box">
+            <canvas id="myChart" class="chart-styles"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
 <script src="js/portal/general.js"></script>
+<script src="js/portal/teacher/maestro-home.js"></script>
 
 </html>

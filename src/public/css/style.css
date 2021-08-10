@@ -604,18 +604,18 @@
      background: #002147;
 }
  .wed-hom-footer h4{
-     font-size: 14px;
-     color: #d6d6d6;
+     font-size: 16px;
+     color: #ffffff;
      padding-bottom: 25px;
      text-transform: uppercase;
 }
  .wed-hom-footer p{
      font-size:13px;
-     color: #838384;
+     color: #cecece;
 }
  .wed-hom-footer p a{
      font-size:13px;
-     color: #838384;
+     color: #cecece;
 }
  .wed-foot-link{
      border-top: 1px groove #6a83a0;
@@ -680,6 +680,9 @@
     padding: 8px 30px 8px 30px;
     border-radius: 50px;
     color: white;
+    position: absolute;
+    width: 410px;
+    text-align: center;
 }
 
 .regButton:hover{
@@ -688,7 +691,10 @@
 }
 
 .regLogo{
-    height: 50px;
+    position: relative;
+    height: 300px;
+    top: -40px;
+    left: -70px;
 }
 
  .wed-rights p{
@@ -5944,3 +5950,6 @@ padding: 6px 25px;
     color: #851313;	
 }
 
+.copy-right a{
+    color: rgb(175, 175, 175);
+}

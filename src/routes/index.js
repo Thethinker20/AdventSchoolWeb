@@ -13,6 +13,9 @@ router.get("/register", (req, res) => {
 router.get("/loginMaestro", (req, res) => {
   res.render("auth/loginMaestro", { layout: false });
 });
+router.get("/succesful", (req, res) => {
+  res.render("pages/skolnan/succesful", { layout: false });
+});
 
 router.get("/historia", (req, res) => {
   res.render("pages/website/historia");
@@ -73,12 +76,20 @@ router.get("/admin-studiante", (req, res) => {
 router.get("/admin-klas", (req, res) => {
   res.render("pages/portal/admin/admin-klas", { layout: false });
 });
-router.get("/maestro-home", (req, res) => {
-  res.render("pages/portal/teacher/maestro-home", { layout: false });
-});
 
 router.get("/admin-mIndividual", (req, res) => {
   res.render("pages/portal/admin/admin-mIndividual", { layout: false });
+});
+
+
+router.get("/maestro-home", (req, res) => {
+  res.render("pages/portal/teacher/maestro-home", { layout: false });
+});
+router.get("/maestro-studiante", (req, res) => {
+  res.render("pages/portal/teacher/maestro-studiante", { layout: false });
+});
+router.get("/maestro-stuIndiv", (req, res) => {
+  res.render("pages/portal/teacher/maestro-stuIndiv", { layout: false });
 });
 
 module.exports = router;

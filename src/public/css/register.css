@@ -110,12 +110,12 @@ a img{
 margin-bottom: 25px;
 }
 
-label{
+.mb-25 h5{
     font-weight: 500;
 }
 
-.bRow{
-
+label{
+    font-weight: 600;
 }
 
 .reg-sendButton{

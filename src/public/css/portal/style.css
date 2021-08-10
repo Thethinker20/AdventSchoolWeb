@@ -474,10 +474,31 @@ td, th {
   color: white;
   padding: 10px 12px;
   border-radius: 10%;
+  border-radius: 10px;
+    height: 40px;
+    width: 75px;
 }
 
 .table-delete:hover{
   background: #851313c7;
+  color: white;
+  text-decoration: none;
+}
+
+.table-edit{
+  background: #28a745;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 10%;
+  border-radius: 10px;
+    height: 40px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-edit:hover{
+  background: #30a54b;
   color: white;
   text-decoration: none;
 }
@@ -743,4 +764,19 @@ td, th {
 
 .sticky + .dash-maestro {
   padding-top: 60px;
+}
+
+.dataTables_filter{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.dataTables_info{
+  margin-top: 10px;
+}
+
+.dataTables_paginate{
+  display: flex;
+  justify-content: flex-end;
 }
