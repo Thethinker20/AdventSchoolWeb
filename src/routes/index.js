@@ -88,8 +88,14 @@ router.get("/maestro-home", (req, res) => {
 router.get("/maestro-studiante", (req, res) => {
   res.render("pages/portal/teacher/maestro-studiante", { layout: false });
 });
-router.get("/maestro-stuIndiv", (req, res) => {
-  res.render("pages/portal/teacher/maestro-stuIndiv", { layout: false });
+router.get("/maestro-stuIndivPunt", (req, res) => {
+  res.render("pages/portal/teacher/maestro-stuIndivPunt", { layout: false });
+});
+router.get("/maestro-infoStudiante", (req, res) => {
+  res.render("pages/portal/teacher/maestro-infoStudiante", { layout: false });
+});
+router.get("/student-home", (req, res) => {
+  res.render("pages/portal/student/student-home", { layout: false });
 });
 
 module.exports = router;

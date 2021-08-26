@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Studiante Individual</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='/vendor/bootstrap/css/bootstrap.min.css'>
+    <link rel='stylesheet' href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css">
+    <script src="https://kit.fontawesome.com/14fac1d4b2.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='/css/portal/style.css'>
+    <link rel='stylesheet' href='/css/portal/maestro/mIndi.css'>
+
+</head>
+{{!-- studiante individual punto nan --}}
+
+<body>
+    {{!-- navbar --}}
+    <nav id="navbar">
+        <div class="row rowW">
+            <div class="nav-img">
+                <a href=""><img src="media/logoDash.png" alt=""></a>
+            </div>
+            <div class="nav-drop">
+                <div class="nav-dropdown">
+                    <img src="media/maricruz1.jpg" alt="">
+                    <span>Maricruz</span>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="nav-dropdown-content">
+                        <a href="#"><i class="fas fa-user"></i>Profile</a>
+                        <a href="/loginMaestro"><i class="fas fa-sign-out-alt"></i>Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    {{!-- sidebar --}}
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="media/maricruz1.jpg" class="icon">
+            <div class="logo_name">Maricruz</div>
+            <i class="fas fa-bars" id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="/maestro-home">
+                    <i class='bx bxs-home'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="/maestro-studiante">
+                    <i class='bx bx-list-ol'></i>
+                    <span class="links_name">Punto Studiante</span>
+                </a>
+                <span class="tooltip">Punto Studiante</span>
+            </li>
+            <li>
+                <a href="/maestro-infoStudiante">
+                    <i class='bx bxs-info-circle' ></i>
+                    <span class="links_name">Info Studiante</span>
+                </a>
+                <span class="tooltip">Info Studiante</span>
+            </li>
+        </ul>
+    </div>
+    {{!-- content --}}
+    <div class="dash-welcome">
+        <div class="dash-header">
+            <h4>Add punto di studiante </h4>
+            <h6>Bestuur > portal > maestro > studiante</h6>
+        </div>
+        <div class="maestro-header">
+            <div class="maestro-Img">
+                <img src="media/maricruz.jpg" alt="">
+            </div>
+            <div class="maestro-title">
+                <h3 id="mName">Maricruz Fariz</h3>
+                <p>Grupo <span id="mGroup"></span> </p>
+            </div>
+        </div>
+        <div class="maestro-content p-4">
+            {{!-- <div class="box-inn-sp">
+                <div class="inn-title">
+                    <h4>Studiante</h4>
+                </div>
+                <div class="tab-inn pb-2">
+                    <div class="table-responsive table-desi">
+                        <table class="table table-hover table-search" id="tableStudent">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Nomber</th>
+                                    <th>Fam</th>
+                                    <th>Telefòn</th>
+                                    <th>Email</th>
+                                    <th>Adrès</th>
+                                    <th>Fecha nasimentu</th>
+                                    <th>Klas</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="list-img"><img src="images/user/1.png" alt=""></span>
+                                    </td>
+                                    <td>martina</td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>united states</td>
+                                    <td>ST17241</td>
+                                    <td>03 Jun 1990</td>
+                                    <td>Grupo 2</td>
+                                    <td><a href="admin-student-details.html" class="table-delete">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="images/user/1.png" alt=""></span>
+                                    </td>
+                                    <td>martina</td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>united states</td>
+                                    <td>ST17241</td>
+                                    <td>03 Jun 1990</td>
+                                    <td>Grupo 2</td>
+                                    <td><a href="admin-student-details.html" class="table-delete">Delete</a></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="list-img"><img src="images/user/1.png" alt=""></span>
+                                    </td>
+                                    <td>martina</td>
+                                    <td>+01 3214 6522</td>
+                                    <td>chadengle@dummy.com</td>
+                                    <td>united states</td>
+                                    <td>ST17241</td>
+                                    <td>03 Jun 1990</td>
+                                    <td>Grupo 2</td>
+                                    <td><a href="admin-student-details.html" class="table-delete">Delete</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div> --}}
+            <div class="tab">
+                <button class="tablinks" onclick="raport(event, 'semester1')">I</button>
+                <button class="tablinks" onclick="raport(event, 'semester2')">II</button>
+                <button class="tablinks" onclick="raport(event, 'semester3')">III</button>
+            </div>
+
+            <div id="semester1" class="tabcontent">
+                <h3>I</h3>
+                <p>Prome raport di aña 2021/2022</p>
+
+                <form id="raport-enter1">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Filosofia di bida</label>
+                            <select class="custom-select" id="filosofia" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Netherlands --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Nederlands</label>
+                            <select class="custom-select" id="nederlands" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Technisch lezen</label>
+                            <select class="custom-select" id="tLezen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Tekts analyse</label>
+                            <select class="custom-select" id="tAnalyse" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spelling</label>
+                            <select class="custom-select" id="spelling" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Algemene Taalkenis</label>
+                            <select class="custom-select" id="taalkenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- papiamentu --}}
+                    <h5 class="pt-5">Idioma, Literashon i Komunikashon:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Papiamentu</label>
+                            <select class="custom-select" id="papiamentu" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Lesa</label>
+                            <select class="custom-select" id="lesa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Analisa Teksto</label>
+                            <select class="custom-select" id="tAnalisa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Diktado</label>
+                            <select class="custom-select" id="diktado" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Konosementu General</label>
+                            <select class="custom-select" id="kGeneral" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Ingle y spaans --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie::</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Engels</label>
+                            <select class="custom-select" id="engels" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spaans</label>
+                            <select class="custom-select" id="spaans" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- rekenen  --}}
+                    <h5 class="pt-5">Rekenen en Wiskunde:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Rekenen en Wiskunde</label>
+                            <select class="custom-select" id="rekeWisk" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Hoofdrekenen</label>
+                            <select class="custom-select" id="hoofdrekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Cijferen</label>
+                            <select class="custom-select" id="cijferen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Contextopgaven</label>
+                            <select class="custom-select" id="contextopgaven" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- mens en maatschappij  --}}
+                    <h5 class="pt-5">Mens en Maatschappij:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Kenis der Natuur</label>
+                            <select class="custom-select" id="kenNatuur" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geschidenis</label>
+                            <select class="custom-select" id="geschidenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Wereldorientatie</label>
+                            <select class="custom-select" id="wereldorientatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Verkeer</label>
+                            <select class="custom-select" id="verkeer" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- kultura --}}
+                    <h5 class="pt-5">Culture Artistieke Vorming:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Muziek</label>
+                            <select class="custom-select" id="muziek" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Drama</label>
+                            <select class="custom-select" id="drama" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Tekenen</label>
+                            <select class="custom-select" id="tekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Handvaardigheid</label>
+                            <select class="custom-select" id="handvaardigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- otro vak --}}
+                    <div class="row pt-4">
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Gezond levenstijl</label>
+                            <select class="custom-select" id="gezonLeve" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Bewegingsonderwijs</label>
+                            <select class="custom-select" id="bewegingsonderwijs" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Sociale Emocionele Vorm</label>
+                            <select class="custom-select" id="seVorm" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Personlijk vaardigheden --}}
+                    <h5 class="pt-5">Personlijk vaardigheden:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Inzicht</label>
+                            <select class="custom-select" id="inzicht" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geheugen</label>
+                            <select class="custom-select" id="geheugen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Zelfstandigheid</label>
+                            <select class="custom-select" id="zelfstandigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Consentratie</label>
+                            <select class="custom-select" id="consentratie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werktempo</label>
+                            <select class="custom-select" id="werktempo" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Doorzittingsvermogen</label>
+                            <select class="custom-select" id="doorZitting" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werk in groepen</label>
+                            <select class="custom-select" id="wGroepen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Motivatie</label>
+                            <select class="custom-select" id="motivatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-5 pl-4 c">
+                        <button type="submit" class="bSubmitF">Save</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="semester2" class="tabcontent">
+                <h3>II</h3>
+                <p>Didos raport di aña 2021/2022</p>
+                <form id="raport-enter2">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Filosofia di bida</label>
+                            <select class="custom-select" id="filosofia" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Netherlands --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Nederlands</label>
+                            <select class="custom-select" id="nederlands" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Technisch lezen</label>
+                            <select class="custom-select" id="tLezen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Tekts analyse</label>
+                            <select class="custom-select" id="tAnalyse" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spelling</label>
+                            <select class="custom-select" id="spelling" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Algemene Taalkenis</label>
+                            <select class="custom-select" id="taalkenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- papiamentu --}}
+                    <h5 class="pt-5">Idioma, Literashon i Komunikashon:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Papiamentu</label>
+                            <select class="custom-select" id="papiamentu" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Lesa</label>
+                            <select class="custom-select" id="lesa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Analisa Teksto</label>
+                            <select class="custom-select" id="tAnalisa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Diktado</label>
+                            <select class="custom-select" id="diktado" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Konosementu General</label>
+                            <select class="custom-select" id="kGeneral" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Ingle y spaans --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie::</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Engels</label>
+                            <select class="custom-select" id="engels" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spaans</label>
+                            <select class="custom-select" id="spaans" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- rekenen  --}}
+                    <h5 class="pt-5">Rekenen en Wiskunde:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Rekenen en Wiskunde</label>
+                            <select class="custom-select" id="rekeWisk" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Hoofdrekenen</label>
+                            <select class="custom-select" id="hoofdrekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Cijferen</label>
+                            <select class="custom-select" id="cijferen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Contextopgaven</label>
+                            <select class="custom-select" id="contextopgaven" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- mens en maatschappij  --}}
+                    <h5 class="pt-5">Mens en Maatschappij:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Kenis der Natuur</label>
+                            <select class="custom-select" id="kenNatuur" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geschidenis</label>
+                            <select class="custom-select" id="geschidenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Wereldorientatie</label>
+                            <select class="custom-select" id="wereldorientatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Verkeer</label>
+                            <select class="custom-select" id="verkeer" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- kultura --}}
+                    <h5 class="pt-5">Culture Artistieke Vorming:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Muziek</label>
+                            <select class="custom-select" id="muziek" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Drama</label>
+                            <select class="custom-select" id="drama" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Tekenen</label>
+                            <select class="custom-select" id="tekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Handvaardigheid</label>
+                            <select class="custom-select" id="handvaardigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- otro vak --}}
+                    <div class="row pt-4">
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Gezond levenstijl</label>
+                            <select class="custom-select" id="gezonLeve" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Bewegingsonderwijs</label>
+                            <select class="custom-select" id="bewegingsonderwijs" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Sociale Emocionele Vorm</label>
+                            <select class="custom-select" id="seVorm" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Personlijk vaardigheden --}}
+                    <h5 class="pt-5">Personlijk vaardigheden:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Inzicht</label>
+                            <select class="custom-select" id="inzicht" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geheugen</label>
+                            <select class="custom-select" id="geheugen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Zelfstandigheid</label>
+                            <select class="custom-select" id="zelfstandigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Consentratie</label>
+                            <select class="custom-select" id="consentratie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werktempo</label>
+                            <select class="custom-select" id="werktempo" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Doorzittingsvermogen</label>
+                            <select class="custom-select" id="doorZitting" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werk in groepen</label>
+                            <select class="custom-select" id="wGroepen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Motivatie</label>
+                            <select class="custom-select" id="motivatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-5 pl-4 c">
+                        <button type="submit" class="bSubmitF">Save</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="semester3" class="tabcontent">
+                <h3>III</h3>
+                <p>Di tres raport di aña 2021/2022</p>
+
+                <form id="raport-enter3">
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Filosofia di bida</label>
+                            <select class="custom-select" id="filosofia" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Netherlands --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Nederlands</label>
+                            <select class="custom-select" id="nederlands" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Technisch lezen</label>
+                            <select class="custom-select" id="tLezen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Tekts analyse</label>
+                            <select class="custom-select" id="tAnalyse" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spelling</label>
+                            <select class="custom-select" id="spelling" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Algemene Taalkenis</label>
+                            <select class="custom-select" id="taalkenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- papiamentu --}}
+                    <h5 class="pt-5">Idioma, Literashon i Komunikashon:</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Papiamentu</label>
+                            <select class="custom-select" id="papiamentu" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Lesa</label>
+                            <select class="custom-select" id="lesa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Analisa Teksto</label>
+                            <select class="custom-select" id="tAnalisa" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Diktado</label>
+                            <select class="custom-select" id="diktado" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Konosementu General</label>
+                            <select class="custom-select" id="kGeneral" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Ingle y spaans --}}
+                    <h5 class="pt-5">Taal, Geletterheid en Communicatie::</h5>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Engels</label>
+                            <select class="custom-select" id="engels" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-2">
+                            <label for="validationDefault04">Spaans</label>
+                            <select class="custom-select" id="spaans" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- rekenen  --}}
+                    <h5 class="pt-5">Rekenen en Wiskunde:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Rekenen en Wiskunde</label>
+                            <select class="custom-select" id="rekeWisk" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Hoofdrekenen</label>
+                            <select class="custom-select" id="hoofdrekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Cijferen</label>
+                            <select class="custom-select" id="cijferen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Contextopgaven</label>
+                            <select class="custom-select" id="contextopgaven" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- mens en maatschappij  --}}
+                    <h5 class="pt-5">Mens en Maatschappij:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Kenis der Natuur</label>
+                            <select class="custom-select" id="kenNatuur" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geschidenis</label>
+                            <select class="custom-select" id="geschidenis" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Wereldorientatie</label>
+                            <select class="custom-select" id="wereldorientatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Verkeer</label>
+                            <select class="custom-select" id="verkeer" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- kultura --}}
+                    <h5 class="pt-5">Culture Artistieke Vorming:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Muziek</label>
+                            <select class="custom-select" id="muziek" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Drama</label>
+                            <select class="custom-select" id="drama" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Tekenen</label>
+                            <select class="custom-select" id="tekenen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Handvaardigheid</label>
+                            <select class="custom-select" id="handvaardigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- otro vak --}}
+                    <div class="row pt-4">
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Gezond levenstijl</label>
+                            <select class="custom-select" id="gezonLeve" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Bewegingsonderwijs</label>
+                            <select class="custom-select" id="bewegingsonderwijs" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4">
+                            <label for="validationDefault04">Sociale Emocionele Vorm</label>
+                            <select class="custom-select" id="seVorm" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    {{!-- Personlijk vaardigheden --}}
+                    <h5 class="pt-5">Personlijk vaardigheden:</h5>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Inzicht</label>
+                            <select class="custom-select" id="inzicht" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Geheugen</label>
+                            <select class="custom-select" id="geheugen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Zelfstandigheid</label>
+                            <select class="custom-select" id="zelfstandigheid" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Consentratie</label>
+                            <select class="custom-select" id="consentratie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werktempo</label>
+                            <select class="custom-select" id="werktempo" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Doorzittingsvermogen</label>
+                            <select class="custom-select" id="doorZitting" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Werk in groepen</label>
+                            <select class="custom-select" id="wGroepen" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <label for="validationDefault04">Motivatie</label>
+                            <select class="custom-select" id="motivatie" required>
+                                <option selected disabled value="">Skohe...</option>
+                                <option value="G">Goed</option>
+                                <option value="M">Matig</option>
+                                <option value="V">Voldoende</option>
+                                <option value="O">Onvoldoende</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row pt-5 pl-4 c">
+                        <button type="submit" class="bSubmitF">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+<script src="js/portal/general.js"></script>
+<script src="js/portal/teacher/maestro-mIndiv.js"></script>
+
+</html>
