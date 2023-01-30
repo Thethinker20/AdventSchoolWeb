@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 const path = require("path");
-const merge = require("lodash/merge");
+const merge = require("lodash.merge");
+const AWS = require('aws-sdk');
 
 /* istanbul ignore next */
 const requireProcessEnv = name => {
@@ -18,46 +18,56 @@ if (process.env.NODE_ENV !== "production") {
   //
   // A) Uncomment this lines:
   dotenv.config({
-    path: path.join(__dirname, "../.env"),
-    example: path.join(__dirname, "../.env.example")
+    path: path.join(__dirname, ".env"),
+    example: path.join(__dirname, ".env.example")
   });
 }
 
 const config = {
-  all: {
-    env: process.env.NODE_ENV || "development",
-    root: path.join(__dirname, ".."),
-    port: process.env.PORT || 4000,
-    ip: process.env.IP || "localhost",
-    apiRoot: process.env.API_ROOT || "",
-    // >>> Here is where the environment
-    // variables are set to config object.
-    // This object is exported.
-    //
-    mongo: {
-      options: {
-        useUnifiedTopology: true,
-        useNewUrlParser: true,
-        useCreateIndex: true
+    all: {
+      env: process.env.NODE_ENV || "development",
+      root: path.join(__dirname, ".."),
+      port: process.env.PORT || 5001,
+      ip: process.env.IP || "localhost",
+      apiRoot: process.env.API_ROOT || "",
+      // >>> Here is where the environment
+      // variables are set to config object.
+      // This object is exported.
+      //
+      mongo: {
+        options: {
+          useUnifiedTopology: true,
+          useNewUrlParser: true,
+          useCreateIndex: true
+        }
+      }
+    },
+    test: {},
+    development: {
+      mongo: {
+        uri: process.env.MONGODB_URI,
+        options: {
+          debug: true
+        }
+      }
+    },
+    production: {
+      ip: process.env.IP || undefined,
+      port: process.env.PORT || 8080,
+      mongo: {
+        uri: process.env.MONGODB_URI
       }
     }
-  },
-  test: {},
-  development: {
-    mongo: {
-      uri: process.env.MONGODB_URI,
-      options: {
-        debug: true
-      }
-    }
-  },
-  production: {
-    ip: process.env.IP || undefined,
-    port: process.env.PORT || 8080,
-    mongo: {
-      uri: process.env.MONGODB_URI
-    }
-  }
-};
+  };
 
-module.exports = merge(config.all, config[config.all.env]);
+
+  const SESCOnfig = {
+    accessKeyId: process.env.AWS_SECERT_KEY,
+    accessSecretKey: process.env.AWS_SECRET_KEY,
+    region: "us-east-1"
+  }
+
+  AWS.config.update(SESCOnfig);
+  var sns = new AWS.SNS();
+  
+  module.exports = merge(config.all, config[config.all.env]);

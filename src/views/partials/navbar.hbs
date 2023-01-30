@@ -35,7 +35,7 @@
                         <h4>User Account</h4>
                         <ul>
                             <li><a href="/login">Sign In</a></li>
-                            <li><a href="/register" >Register</a></li>
+                            <li><a href="/register">Register</a></li>
                         </ul>
                         <h4>All Pages</h4>
                         <ul>
@@ -44,7 +44,7 @@
                             <li><a href="admission.html">Admission</a></li>
                             <li><a href="all-courses.html">All courses</a></li>
                             <li><a href="course-details.html">Course details</a></li>
-                            <li><a href="awards.html">Awards</a></li>
+                            <li><a href="historia.html">Awards</a></li>
                             <li><a href="seminar.html">Seminar</a></li>
                             <li><a href="events.html">Events</a></li>
                             <li><a href="event-details.html">Event details</a></li>
@@ -70,18 +70,25 @@
 <section>
     <!-- TOP BAR -->
     <div class="ed-top">
-        <div class="container">
+        <div class="ed_top_2">
             <div class="row">
                 <div class="col-md-12">
                     <div class="ed-com-t1-left">
                         <ul>
-                            <li><a target="_blank" href="https://www.google.com/maps/place/14+Marigotweg,+Willemstad,+Cura%C3%A7ao/@12.152711,-68.9431063,17z/data=!3m1!4b1!4m5!3m4!1s0x8e849d326cb9d9f7:0xf69067e41fda7e8d!8m2!3d12.152705!4d-68.940917">Adrès: Marigot weg 14, Willemstad, Curaçao</a>
-                            </li>
-                            <li><a href="https://api.whatsapp.com/send?phone=59998689407">Telefón: +5999 868 9407</a>
+                            <li class="nav_welcome">
+                                Bon Bini na Advent School Bestuur!
                             </li>
                         </ul>
                     </div>
-                    <div class="ed-com-t1-right">
+                    {{!-- <div class="ed-com-t1-right">
+                        <ul>
+                            <li> 5999 868 9407
+                            </li>
+                            <li>adventschoolbestuur@gmail.com
+                            </li>
+                        </ul>
+                    </div> --}}
+                    <div class="ed-com-t1-right_1 n_button">
                         <ul>
                             <li><a href="/login">Sign In</a>
                             </li>
@@ -89,19 +96,11 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="ed-com-t1-social">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- LOGO AND MENU SECTION -->
@@ -115,7 +114,7 @@
                     </div>
                     <div class="main-menu">
                         <ul>
-                            <li><a href="/">Home</a>
+                            <li><a  class="active" href="/">Home</a>
                             </li>
                             <li class="admi-menu">
                                 <a href="#" class="mm-arr">DiNos</a>
@@ -130,7 +129,8 @@
                                                         <span>Akademia</span>
                                                     </a>
                                                 </div>
-                                                <p>Sa e rooster general di nos skol nan i kk nos alumno nan ta hasi ki actividad, su horario i un 
+                                                <p>Sa e rooster general di nos skol nan i kk nos alumno nan ta hasi ki
+                                                    actividad, su horario i un
                                                     breve splikashon di e les ku nos alumno nan ta tuma na nos skol nan.
                                                 </p>
                                                 <a href="/akademia" class="mm-r-m-btn">Lesa mas</a>
@@ -154,10 +154,12 @@
                                                         <span>Historia</span>
                                                     </a>
                                                 </div>
-                                                <p>Lesa i sa e historia di adventschool bestuur. Manera e aña a kuminsa ku nos prome skol adventista na Kòrsou,
-                                                    ken nan tabata e persona nan ku a kuminsa i traha pa nos tin nos skol nan awe.
+                                                <p>Lesa i sa e historia di adventschool bestuur. Manera e aña a kuminsa
+                                                    ku nos prome skol adventista na Kòrsou,
+                                                    ken nan tabata e persona nan ku a kuminsa i traha pa nos tin nos
+                                                    skol nan awe.
                                                 </p>
-                                                <a href="awards.html" class="mm-r-m-btn">Lesa mas</a>
+                                                <a href="/historia" class="mm-r-m-btn">Lesa mas</a>
                                             </div>
                                             {{!-- <div class="mm2-com mm1-com mm1-s4">
                                                 <div class="ed-course-in">
@@ -181,24 +183,24 @@
                             </li>
                             {{!-- skolnan --}}
                             <li class="cour-menu">
-                                    <a href="#!" class="mm-arr">Skolnan</a>
-                                    <!-- MEGA MENU 1 -->
-                                    <div class="mm-pos" style="width: 60%; left: 615px;">
-                                        <div class="cour-mm m-menu">
-                                            <div class="m-menu-inn">
-                                                <div class="mm1-com mm1-cour-com mm1-s3" style="width: 50%;">
-													<h4>Nos skolnan</h4>
-                                                    <ul>
-                                                        <li><a href="/bonam">Bonam</a></li>
-                                                         <li><a href="/koralspecht">Koralspecht</a></li>
-                                                          <li><a href="/mahuma">Mahuma-Zuid</a></li>
-                                                    </ul>
-                                                </div>
+                                <a href="#!" class="mm-arr">Skolnan</a>
+                                <!-- MEGA MENU 1 -->
+                                <div class="mm-pos" style="width: 60%; left: 615px;">
+                                    <div class="cour-mm m-menu">
+                                        <div class="m-menu-inn">
+                                            <div class="mm1-com mm1-cour-com mm1-s3" style="width: 50%;">
+                                                <h4>Nos skolnan</h4>
+                                                <ul>
+                                                    <li><a href="/bonam">Bonam</a></li>
+                                                    <li><a href="/koralspecht">Koralspecht</a></li>
+                                                    <li><a href="/mahuma">Mahuma-Zuid</a></li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </li>
-                            
+                                </div>
+                            </li>
+
                             {{!-- <li><a href="all-courses.html">Eventos</a></li> --}}
                             <li><a href="/kontakt"> Kontaktá nos</a>
                             </li>
@@ -209,17 +211,6 @@
 
                 </div>
 
-            </div>
-        </div>
-    </div>
-    <div class="search-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="search-form">
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>
